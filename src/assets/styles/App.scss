@@ -1,0 +1,40 @@
+@import './Vars.scss';
+
+@mixin colCenCen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexCenCen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: $dark-color;
+  color: $light-color;
+  font-family: $text-font;
+}
+
+h1,
+h3,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary-color;
+  font-family: $title-font;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
