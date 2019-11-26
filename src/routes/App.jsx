@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Characters from '../containers/Characters';
 import Layout from '../components/Layout';
+import '../assets/styles/App.scss';
 
 const App = () => (
   <BrowserRouter>

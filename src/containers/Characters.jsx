@@ -1,7 +1,8 @@
 import React from 'react';
+import CharacterList from '../components/CharacterList';
 
 const Characters = () => (
-  <h1>Hello, i am Characters</h1>
+  <CharacterList />
 );
 
 export default Characters;

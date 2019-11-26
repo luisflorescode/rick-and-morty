@@ -1,0 +1,26 @@
+@import '../App.scss';
+
+.header {
+  @include colCenCen;
+}
+
+.header__logo-img {
+  width: 350px;
+  height: auto;
+}
+
+.header__nav__options {
+  @include flexCenCen;
+  padding: 0;
+}
+
+.header__nav__options-item {
+  margin-right: 25px;
+  font-size: 25px;
+  list-style-type: none;
+}
+
+.header__nav__options-item:hover {
+  cursor: pointer;
+  color: $success-color;
+}
