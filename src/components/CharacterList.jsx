@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Error from './Error';
 import Character from './Character';
-import '../assets/styles/components/CharacterList.scss';
 import Loader from './Loader';
+import '../assets/styles/components/CharacterList.scss';
 
 const CharacterList = () => {
   const [characters, setCharacters] = useState([]);
@@ -31,7 +32,7 @@ const CharacterList = () => {
       {loading ? (
         <Loader />
       ) : error ? (
-        <div>¡Error!</div>
+        <Error />
       ) : (
         characters.map((character) => (
           <Character key={character.id} data={character} />
