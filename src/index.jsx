@@ -7,6 +7,7 @@ import App from './routes/App';
 
 const initialState = {
   favoriteCharacters: [],
+  sectionActive: 'Characters',
 };
 
 const store = createStore(reducer, initialState);

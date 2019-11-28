@@ -12,6 +12,11 @@ const reducer = (state, action) => {
           (items) => items.data.id !== action.payload,
         ),
       };
+    case 'SET_SECTION':
+      return {
+        ...state,
+        sectionActive: action.payload,
+      };
     default:
       return state;
   }

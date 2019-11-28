@@ -20,6 +20,10 @@
   list-style-type: none;
 }
 
+.header__nav__options-item.active {
+  color: $success-color
+}
+
 .header__nav__options-item:last-child {
   margin-right: 0;
 }
