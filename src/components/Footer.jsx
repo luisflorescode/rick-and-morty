@@ -15,7 +15,7 @@ const Footer = () => (
         target='_blank'
         className='logo'
       >
-        <span className='logoImg'>&lt;&gt;</span>
+        <span className='logo-img'>&lt;&gt;</span>
         {' '}
         <span>Luis Flores</span>
       </a>

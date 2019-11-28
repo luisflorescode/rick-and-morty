@@ -57,3 +57,7 @@ figure {
   margin: 0;
   padding: 0;
 }
+
+section {
+  min-height: calc(100vh - 300px);
+}

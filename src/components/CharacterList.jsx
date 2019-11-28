@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Character from './Character';
 import '../assets/styles/components/CharacterList.scss';
+import Loader from './Loader';
 
 const CharacterList = () => {
   const [characters, setCharacters] = useState([]);
@@ -28,7 +29,7 @@ const CharacterList = () => {
   return (
     <div className='characterList'>
       {loading ? (
-        <div>Loading...</div>
+        <Loader />
       ) : error ? (
         <div>¡Error!</div>
       ) : (
