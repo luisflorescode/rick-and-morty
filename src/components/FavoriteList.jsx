@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import '../assets/styles/components/FavoriteList.scss';
 import Character from './Character';
+import Empty from './Empty';
 
 const FavoriteList = (props) => {
   const { favoriteCharacters } = props;
@@ -9,7 +10,7 @@ const FavoriteList = (props) => {
   return (
     <div className='characterList'>
       {!favoriteCharacters.length ? (
-        <h1>Empty</h1>
+        <Empty />
       ) : (
         favoriteCharacters.map((character) => (
           <Character key={character.data.id} data={character.data} />
