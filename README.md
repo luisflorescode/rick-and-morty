@@ -4,6 +4,9 @@ Está es una aplicación desarrollada en React que consume la API de [The Rick a
  
 Elegí esta API ya que es muy completa en los datos que provee, además de que contiene las imágenes de cada personaje.
 
+## Deploy
+La aplicación fue desplegada mediante The Firebase Command Line Interface (CLI) Tools en: https://rickandmorty-26df7.firebaseapp.com
+
 ## Instalación
 ```
 npm install
