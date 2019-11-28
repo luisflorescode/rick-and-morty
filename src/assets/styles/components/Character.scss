@@ -18,8 +18,34 @@
   background-color: $danger-color;
 }
 
+.character__details-star {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: -25px;
+  left: 245px;
+}
+
+.character__details-star.favorite {
+  fill: $success-color;
+}
+
+.character__details-star.favorite:hover {
+  fill: $light-color;
+}
+
+.character__details-star.noFavorite {
+  fill: $light-color;
+}
+
+.character__details-star.noFavorite:hover {
+  fill: $success-color;
+}
+
 .character__details-name {
   margin: 0;
+  margin-top: 20px;
   text-align: center;
   font-size: 21px;
 }

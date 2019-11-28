@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Error from './Error';
-import Character from './Character';
-import Loader from './Loader';
 import '../assets/styles/components/CharacterList.scss';
+import Character from './Character';
+import Error from './Error';
+import Loader from './Loader';
 
 const CharacterList = () => {
   const [characters, setCharacters] = useState([]);
