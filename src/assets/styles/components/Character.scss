@@ -19,13 +19,21 @@
 
 .character__details-name {
   margin: 0;
-  color: $secondary-color;
   text-align: center;
   font-size: 21px;
 }
 
 .character__details__item {
   margin: 5px 0;
+}
+
+.character__details__item-more {
+  text-align: end;
+}
+
+.character__details__item-more:hover {
+  cursor: pointer;
+  color: $secondary-color;
 }
 
 .character__details__item-type {

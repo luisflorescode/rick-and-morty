@@ -1,15 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import propTypes from 'prop-types';
 import { setFavorite, deleteFavorite } from '../actions';
 import '../assets/styles/components/Character.scss';
+import Modal from './Modal';
+import CharacterDetail from './CharacterDetail';
 
 const Character = (props) => {
+  const [modal, setModal] = useState(false);
+
   const { data } = props;
-  const { id, image, name, status, species, gender, origin } = data;
+  const { id, image, name, status, species, gender } = data;
+
+  const handleCloseModal = () => {
+    setModal(false);
+  };
+
+  const handleOpenModal = () => {
+    setModal(true);
+  };
 
   const handleSetFavorite = () => {
-    props.setFavorite({ id, image, name, status, species, gender, origin });
+    props.setFavorite({ data });
   };
 
   const handleDeleteFavorite = (itemId) => {
@@ -36,12 +48,13 @@ const Character = (props) => {
           {' '}
           {gender}
         </p>
-        <p className='character__details__item'>
-          <span className='character__details__item-type'>Origin:</span>
-          {' '}
-          {origin.name}
+        <p onClick={handleOpenModal} className='character__details__item-more'>
+          More details...
         </p>
       </div>
+      <Modal isOpen={modal} onClose={handleCloseModal}>
+        <CharacterDetail data={data} />
+      </Modal>
     </div>
   );
 };
